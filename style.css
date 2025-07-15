@@ -1,0 +1,178 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  margin: 0 0 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* === About Section === */
+.about {
+  background: #00839e;
+  color: white;
+  padding: 4rem 1rem 2rem;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about .portrait {
+  width: 220px;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.name-tag {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* === Work Section === */
+.work {
+  padding: 4rem 1rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.project-links a {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.project-links img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  transition: filter 0.2s ease;
+}
+
+.project-links img:hover {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(81%) saturate(1042%) hue-rotate(158deg) brightness(94%) contrast(101%);
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0;
+}
+
+/* === Contact Section === */
+.contact {
+  background: #00839e;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.contact-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text img {
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 20px;
+}
+
+.contact-img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .about-content, .contact-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .name-tag {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .contact-img {
+    width: 100%;
+  }
+}
